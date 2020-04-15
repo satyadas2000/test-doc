@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
  
  
 @RestController
+@RequestMapping("/test-doc")
 public class CustomerController
 {
-    @RequestMapping("/")
+    @RequestMapping("/customers")
     public List<Customer> findAll()
     {
       List<Customer> customerList = new ArrayList<Customer>();
