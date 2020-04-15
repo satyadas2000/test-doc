@@ -17,4 +17,4 @@ ARG JAR_FILE=target/test-doc-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} test-doc-0.0.1-SNAPSHOT.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/demo-docker-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/test-doc-0.0.1-SNAPSHOT.jar"]
